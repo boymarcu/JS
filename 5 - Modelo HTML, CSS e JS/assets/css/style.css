@@ -1,0 +1,76 @@
+:root { /*definindo var para cor*/
+    --primary-color:rgb(138, 43, 226);
+    --primary-color-darker:rgb(86, 28, 141);
+}
+
+* {
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body{
+    margin: 0; /*tirando a margem*/
+    padding: 0; /*deixando o conteúdo da página justo*/
+
+    background-color: rgb(138, 43, 226); /*definindo cor para o background*/
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*definindo fonte*/
+    font-size: 1.3em; /*tamanho das letras*/
+
+    line-height: 1.5; /*tamanho das linhas*/
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 640px; /*aplicando o tamanho do container*/
+    margin: 50px auto; /*centralizando*/
+    padding: 15px; /*uma margem interna*/
+
+    background-color: white; /*cor interna do container*/
+
+    border-radius: 10px;
+}
+
+form input, form label, form button{
+    display: block; /*cada form tem sua linha*/
+    width: 100%; /*definindo tamnanho dos conteúdos do form (input)*/
+
+    margin-bottom: 10px; /*margem pro rodapé*/
+}
+
+form input{
+    height: 40px; /*tamanho da caixa de texto*/
+    font-size: 22px; /*tamanho da fonte pra caixa de texto*/
+
+    padding: 0 20px; /* margem apenas para as laterais*/
+
+    border-radius: 20px;
+}
+
+form input:focus{ /*quando estiver em uma caixa de texto do input*/
+    outline: 1px solid var(--primary-color); /*a margem da caixa de texto será*/
+}
+
+form button {
+    margin-top: 40px;
+
+    border: none; /*deixando o button sem borda*/
+    border-radius: 29px;
+
+    background-color: blueviolet; /*cor do fundo roxa*/
+    color: white; /*cor da fonte branca*/
+
+    font-size: 23px; /*tamanho da fonte*/
+    font-weight: 700; /*intensidade do negrito*/
+
+    height: 50px; /*tamanho do button*/
+
+    cursor: pointer; /*deixando o cursor*/
+}
+
+form button:hover{ /*quando passar o mouse em cima do button*/
+    background-color: var(--primary-color-darker); /*ele vai ficar com uma cor mais escura*/
+}
