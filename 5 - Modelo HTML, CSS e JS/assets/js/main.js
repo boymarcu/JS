@@ -36,13 +36,13 @@ botao.addEventListener("click", function () {
         } else if (soma >= 18.5 && soma <= 24.9) {
             resultado.textContent = "Seu IMC é " + soma.toFixed(2) + ' ' + normal.textContent;
             resultado.style.backgroundColor ="#ADFF2F"
-        } else if (soma >= 25 && soma <= 24.9) {
+        } else if (soma >= 25 && soma <= 29.9) {
             resultado.textContent = "Seu IMC é " + soma.toFixed(2) + ' ' + sobre.textContent;
             resultado.style.backgroundColor ="	#FFFF00"
-        } else if (soma > 30 && soma <= 34.9) {
+        } else if (soma >= 30 && soma <= 34.9) {
             resultado.textContent = "Seu IMC é " + soma.toFixed(2) + ' ' + ob1.textContent;
             resultado.style.backgroundColor ="#FFA500"
-        } else if (soma > 35 && soma <= 39.9) {
+        } else if (soma >= 35 && soma <= 39.9) {
             resultado.textContent = "Seu IMC é " + soma.toFixed(2) + ' ' + ob2.textContent;
             resultado.style.backgroundColor ="#FF8C00"
         } else if (soma >= 40) {
